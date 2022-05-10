@@ -6,7 +6,7 @@ function App() {
   const [responseData, setResponseData] = useState([])
 
   const fetchPokemon = () => {
-    axios.get("https://pokeapi.co/api/v2/pokemon")
+    axios.get("https://pokeapi.co/api/v2/pokemon?limit=807")
       .then(response => {
         setResponseData(response.data.results);
       })
